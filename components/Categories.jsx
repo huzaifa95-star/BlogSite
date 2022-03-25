@@ -26,9 +26,5 @@ const Categories = () => {
 
 export default Categories;
 
-export async function getServerSideProps() {
-  const categories = (await getCategories()) || [];
-  return {
-    props: { categories },
-  };
-}
+
+
