@@ -10,7 +10,7 @@ const Categories = () => {
     getCategories().then((newCategories) => {
       setCategories(newCategories);
     });
-  }, []);
+  }, [setCategories]);
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
@@ -25,3 +25,10 @@ const Categories = () => {
 };
 
 export default Categories;
+
+export async function getServerSideProps() {
+  const categories = (await getCategories()) || [];
+  return {
+    props: { categories },
+  };
+}
