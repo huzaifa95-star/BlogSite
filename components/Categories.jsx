@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 import { getCategories } from '../services';
 
-const Categories = () => {
+const Categories = ({ }) => {
+
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const Categories = () => {
 };
 
 export default Categories;
+
 
 
 
