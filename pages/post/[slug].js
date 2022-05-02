@@ -13,6 +13,7 @@ const PostDetails = ({ post }) => {
     return <Loader />;
   }
 
+  console.log(post.tags)
   return (
     <>
       <Head>
@@ -20,6 +21,7 @@ const PostDetails = ({ post }) => {
         <meta name="description" content='Know the facts' />
         <meta property="og:title" content={post.title} />
         <meta property="og:excerpt" content={post.excerpt} />
+        <meta property="og:keywords" content={post.tags} />
       </Head>
 
       <div className="container mx-auto px-10 mb-8">
