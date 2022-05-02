@@ -21,6 +21,7 @@ export const getPosts = async () => {
             slug
             title
             excerpt
+            tags
             featuredImage {
               url
             }
@@ -28,6 +29,8 @@ export const getPosts = async () => {
               name
               slug
             }
+            
+            
           }
         }
       }
@@ -60,6 +63,7 @@ export const getPostDetails = async (slug) => {
       post(where: {slug: $slug}) {
         title
         excerpt
+        tags
         featuredImage {
           url
         }
