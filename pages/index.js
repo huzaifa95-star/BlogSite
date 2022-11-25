@@ -8,7 +8,7 @@ export default function Home({ posts }) {
 
     <div className="container mx-auto px-10 mb-8">
       <Head>
-        <title>{posts.title}-My blog site</title>
+        <title>{posts.title} -Blogtrest</title>
         <meta name="description" content='Know the facts' />
         <link rel='icon' href='/favicon.io' />
       </Head>
