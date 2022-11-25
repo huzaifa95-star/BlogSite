@@ -17,7 +17,7 @@ const PostDetails = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{post.title} -Blogtrest</title>
+        <title>{post.title}-My blog site</title>
         <meta name="description" content='Know the facts' />
         <meta property="og:title" content={post.title} />
         <meta property="og:excerpt" content={post.excerpt} />
